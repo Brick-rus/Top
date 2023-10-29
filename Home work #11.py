@@ -94,3 +94,4 @@
 #     elif i < height_petya:
 #         print(height.index(i) + 1)
 #         break
+
