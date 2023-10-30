@@ -53,18 +53,17 @@
 #
 # print("Вы попали в наш словарь стран и городов каждой страны")
 # cites = input("Введите город:").capitalize()
-# if cites == "Сингапур" or cites == "Монако" or cites == "Ватикан":
-#     for key in list_of_countries:
-#         if type(list_of_countries[key]) == list:
+# flag = False
+# for key in list_of_countries:
+#     if type(list_of_countries[key]) == list:
+#         if cites in list_of_countries[key]:
+#             flag = True
 #             for city in list_of_countries[key]:
 #                 if city == cites:
-#                     print(f"{city} это город государство!")
-# elif cites:
-#     for key in list_of_countries:
-#         if type(list_of_countries[key]) == list:
-#             for city in list_of_countries[key]:
-#                 if city == cites:
-#                     print(f"Город {city} находится в стране {key}")
+#                     print(f"{key} : {city}")
+#
+# if not flag:
+#     print("Не найдено")
 
 
 # -----------------------------------задача------------------------------
@@ -85,13 +84,12 @@
 # height_petya = 162
 #
 # for i in height:
-#     if i == height_petya:
-#         print(f"Петя должен быть в{len(height) - height[::-1].index(i + 1)}месте")
-#
-#     elif i > height_petya:
+#     if i > height_petya:
 #         if height.index(i) + 1 == len(height):
-#             print(len(height) + 1)
+#             print(f'Должен встать на {len(height) + 1} место')
+#     # elif i == height_petya:
+#     #     print(len(height) - height[::-1].index(i) + 1)
 #     elif i < height_petya:
-#         print(height.index(i) + 1)
+#         print(f'Должен встать на {height.index(i) + 1} место')
 #         break
 
