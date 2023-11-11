@@ -33,4 +33,3 @@
 #         num_to_name_week(num_day_week)
 # else:
 #     print("В неделе всего семь дней попробуйте заново.")
-
